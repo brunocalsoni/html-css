@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <Style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div:hover {
+            color: red;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            background-color: red;
+            color: white;
+            width: 300px;
+            text-align: center;
+        }
+
+    </Style>
+</head>
+<body>
+    <h1>Hover</h1>
+    <p>Estudando Pseudo-classes, através de &lt;div&gt; e utilizando :hover</p>
+    <p>Também vamos entender como funciona o parâmetro de Direct Children</p>
+    <h2>Exemplo de Menu de Site</h2>
+    <div>
+        Menu
+        <p> Item 1 <br>
+            Item 2 <br>
+            Item 3 
+        </p>
+    </div>
+     <p>Fim</p>
+</body>
+</html>

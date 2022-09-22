@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            font-family: 'Times New Roman', Times, serif;
+            color: blueviolet;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        a:hover {
+            background-color: rgb(255, 255, 131);
+            padding: 3px;
+        }
+
+        a:active {
+            color: black;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        a:visited {
+            color: ;
+        }
+
+        a::after {
+            content: ' [link]';
+            color: lightgray;
+            font-size: 0.8em;
+            font-weight: normal;
+        }
+
+        a::before {
+            content: '✶ ';
+        }
+
+        .especial {
+            background-color: aqua;
+            padding: 3px;
+        }
+
+        .especial::after {
+            content: none;
+        }
+
+        .especial:hover {
+            background-color: black;
+        }
+
+    
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <p>Usando Pseudo-Classes e Pseudo-Elementos para estilizar links</p>
+    <ul>
+        <p><li><a href="https://erikasarti.com/html/dingbats-simbolos-desenhos/" target="_blank" rel="external">Ir para Símbolos</a></li></p>
+        <p><li><a href="https://erikasarti.com/html/dingbats-simbolos-desenhos/" target="_blank" rel="external" class="especial">Ir para Círculo de Cores</a></li></p>
+        <p><li><a href="https://erikasarti.com/html/dingbats-simbolos-desenhos/" target="_blank" rel="external">Ir para Emojis</a></li></p>
+    </ul>
+</body>
+</html>
