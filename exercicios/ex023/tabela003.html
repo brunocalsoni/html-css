@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 700px;
+            height: 400px;
+        }
+
+        caption {
+            background-color: gray;
+            color: white;
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;            
+        }
+
+    </style>
+</head>
+<body>
+
+    <table>
+
+        <caption>Exemplo de Tabela</caption>
+
+        <thead>
+
+            <tr>
+                <th scope="col">Clientes</th>
+                <th scope="col">Produtos</th>
+                <th scope="col">Preço</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td rowspan="3">Fulano</td>
+                <td>Aspirador de Pó</td>
+                <td>100,00</td>
+            </tr>
+
+            <tr>
+                <!-- <td>Beltrano</td> -->
+                <td>Notebook</td>
+                <td>1.000,00</td>
+            </tr>
+
+            <tr>
+                <!-- <td>Ciclano</td> -->
+                <td>Escrivaninha</td>
+                <td>500,00</td>
+            </tr>
+     
+        </tbody>
+
+        <tfoot>
+
+            <tr>
+                <th scope="row">Total Clientes</th>
+                <td colspan="2" style="text-align: center;">3</td>
+            </tr>
+
+        </tfoot>
+
+    </table>
+
+</body>
+</html>
