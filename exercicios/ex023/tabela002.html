@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+
+        table {
+            width: 700px;
+            height: 700px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+        }
+
+        th {
+            padding: 5px;
+        }
+
+        thead {
+            background-color: gray;
+            color: white;
+        }
+
+        .posicao {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .cidade {
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        .numero {
+            text-align: right;
+            vertical-align: middle;
+        }
+
+        tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>População brasileira</h1>
+    
+    <table>
+
+        <thead>
+
+            <tr>
+                <th>Posição</th>
+                <th>Estados</th>
+                <th>População</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td class="posicao">1</td>
+                <td class="cidade">São Paulo</td>
+                <td class="numero">41 262 199</td>
+            </tr>
+
+            <tr>
+                <td class="posicao">2</td>
+                <td class="cidade">Minas Gerais</td>
+                <td class="numero">21 422 923</td>
+            </tr>
+
+            <tr>
+                <td class="posicao">3</td>
+                <td class="cidade">Rio de Janeiro</td>
+                <td class="numero">17 463 349</td>
+            </tr>
+
+            <tr>
+                <td class="posicao">4</td>
+                <td class="cidade">Bahia</td>
+                <td class="numero">14 985 284</td>
+            </tr>
+
+            <tr>
+                <td class="posicao">5</td>
+                <td class="cidade">Paraná</td>
+                <td class="numero">11 597 484</td>
+            </tr>
+
+            <tr>
+                <td class="posicao">6</td>
+                <td class="cidade">Rio Grande do Sul</td>
+                <td class="numero">11 466 630</td>
+            </tr>
+
+            <tr>
+                <td class="posicao">7</td>
+                <td class="cidade">Pernambuco</td>
+                <td class="numero">9 674 793</td>
+            </tr>
+
+            <tr>
+                <td class="posicao">8</td>
+                <td class="cidade">Ceará</td>
+                <td class="numero">9 240 580</td>
+            </tr>
+
+            <tr>
+                <td class="posicao">9</td>
+                <td class="cidade">Pará</td>
+                <td class="numero">8 777 124</td>
+            </tr>
+
+            <tr>
+                <td class="posicao">10</td>
+                <td class="cidade">Santa Catarina</td>
+                <td class="numero">7 338 473</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+
+            <tr>
+                <th>Total</th>
+                <td id="no-data"></td>
+                <td class="numero"><strong>100 000 000</strong></td>
+            </tr>
+
+        </tfoot>
+
+    </table>
+
+</body>
+</html>
